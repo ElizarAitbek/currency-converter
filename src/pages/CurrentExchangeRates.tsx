@@ -26,7 +26,9 @@ export default function CurrentExchangeRates() {
   return (
     <StyledExchangesMain>
       <h1>USD Current Exchange Rates</h1>
-      <Button variant="contained">Refresh</Button>
+      <Button variant="contained" onClick={() => dispatch(getExchangeRates())}>
+        Refresh
+      </Button>
       <Table>
         <TableHead>
           <TableRow>
